@@ -1,0 +1,128 @@
+{
+  "id": "9d0a64f8-dbeb-4f48-9642-dca62d71db5f",
+  "version": "2.0",
+  "name": "triangulo",
+  "url": "http://vanilton.net",
+  "tests": [{
+    "id": "53900a96-123d-443d-8df3-0d25949d5662",
+    "name": "VerificarTipoEquilátero",
+    "commands": [{
+      "id": "0444a73f-3dca-4cd9-94d0-2e86fb4926fd",
+      "comment": "",
+      "command": "open",
+      "target": "/triangulo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d41bbcb1-d21c-46c4-9973-12a3a6143069",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "839x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d2fbb59-e481-48af-96aa-39ad3796692f",
+      "comment": "",
+      "command": "click",
+      "target": "name=V1",
+      "targets": [
+        ["name=V1", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='V1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a131881-cee7-4bef-a65d-f3e1cfb3c495",
+      "comment": "",
+      "command": "type",
+      "target": "name=V1",
+      "targets": [
+        ["name=V1", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='V1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "c91a84b4-818e-4db0-aada-93790909d067",
+      "comment": "",
+      "command": "click",
+      "target": "name=V2",
+      "targets": [
+        ["name=V2", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='V2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38d1c6be-1a6c-48e1-a090-65a91ad7747a",
+      "comment": "",
+      "command": "type",
+      "target": "name=V2",
+      "targets": [
+        ["name=V2", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='V2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "7e18da35-fd96-420e-a216-ed13035b61a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=V3",
+      "targets": [
+        ["name=V3", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='V3']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "807c9847-5395-40b9-bc6b-5d55c780b935",
+      "comment": "",
+      "command": "type",
+      "target": "name=V3",
+      "targets": [
+        ["name=V3", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='V3']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "88e06a17-45b1-4a9f-9fa8-024267a51db2",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//input[@value='Identificar']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d618ed45-9803-4ad7-be3d-fb2190df05b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.vsc-initialized > div:nth-child(7)",
+      "targets": [
+        ["css=.vsc-initialized > div:nth-child(7)", "css:finder"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": "Equilátero"
+    }]
+  }],
+  "suites": [{
+    "id": "21fbf73b-943b-4a53-a232-a93c231bcdec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["53900a96-123d-443d-8df3-0d25949d5662"]
+  }],
+  "urls": ["http://vanilton.net/"],
+  "plugins": []
+}
