@@ -1,3 +1,5 @@
+package net.vanilton;
+
 public class Aluno {
 
     private Double nota1;

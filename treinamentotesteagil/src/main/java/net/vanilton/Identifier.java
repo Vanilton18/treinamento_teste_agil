@@ -1,3 +1,4 @@
+package net.vanilton;
 
 public class Identifier {
 

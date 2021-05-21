@@ -38,16 +38,13 @@
             <version>3.141.59</version>
         </dependency>
         <!-- Framework de Teste Unitário -->
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
 
     <build>
         <plugins>
