@@ -19,10 +19,11 @@ public class StepDefinitions extends WebDriverCreator {
     public void clico_no_botão_identificar() {
         driver.findElement(By.xpath("//input[@value='Identificar']")).click();
     }
+
     @Then("Devo visualizar o resultado de triângulo {string}")
     public void devo_visualizar_o_resultado_de_triângulo(String string) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[4]")));
-        assertEquals(driver.findElement(By.xpath("//div[4]")).getText(),"Equilátero");
+        assertEquals(driver.findElement(By.xpath("//div[4]")).getText(), string);
     }
 
     @When("Preencho triângulo")
@@ -34,4 +35,8 @@ public class StepDefinitions extends WebDriverCreator {
         }
     }
 
+    @Then("E Verifico o valor {string} do Vertice {string}")
+    public void e_verifico_o_valor_do_vertice(String v1, String v2) {
+       assertTrue(driver.findElement(By.xpath("//div[contains(.,'V"+v2+"')]")).getText().contains(v1));
+    }
 }

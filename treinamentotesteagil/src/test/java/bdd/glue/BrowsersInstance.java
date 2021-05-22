@@ -23,9 +23,7 @@ public class BrowsersInstance extends WebDriverCreator {
             byte[] screenshot = ((RemoteWebDriver) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "png","image");
         }
-        if(capacidade != null){
-            capacidade.setCapability("resetKeyboard", true);
-        }
+
         driver.navigate().to("http://vanilton.net/triangulo");
 
     }

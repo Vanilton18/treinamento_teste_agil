@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = {"classpath:features"},
         glue = {"bdd/glue"},
         //https://cucumber.io/docs/cucumber/api/#tags
-        tags = "@Sanity",
+        //tags = "@Cenario3",
         publish = true,
         plugin = {"pretty","html:target/cucumber-report/cucumber.html",
                 "json:target/cucumber-report/cucumber.json",
